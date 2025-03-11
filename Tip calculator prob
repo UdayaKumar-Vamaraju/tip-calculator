@@ -1,0 +1,39 @@
+# Tip Calculator probelm
+
+Tip Calculator psuedocode
+
+
+# Write the psuedocode 
+START
+INPUT bill_amount
+IF bill_amount<=0 THEN PRINT "please enter a valid amount"
+END IF
+
+INPUT service_quality
+
+IF service_quality="poor" THEN tip_per=10
+ELSE IF service_quality="fair" THEN tip_per=15
+ELSE IF service_quality="good" THEN tip_per=18
+ELSE IF service_quality="excellent" THEN tip_per=20
+ELSE PRINT "Invalid service_quality select one from poor,fair,good, excellent"
+END IF
+
+INPUT no.of_people
+IF no.of_people<=0 THEN PRINT "please enter a valid number of people, should not be less than 1"
+END IF
+
+tip_amount=(bill_amount*tip_per)/100
+
+total_amount = bill_amount + tip_amount
+
+amount_per_person = total_amount/no.of_people
+
+PRINT "Bill_amount: $", bill_amount
+PRINT "Service quality is:", service_quality
+PRINT "Tip percentage is:", tip_per
+PRINT "Tip amount is :", tip_amount
+PRINT "Total amount is :", total_amount
+PRINT "Total number of people is:", no.of_people
+PRINT "Amount per person is:", amount_per_person
+
+END
